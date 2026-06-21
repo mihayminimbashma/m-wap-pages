@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于开云 · 从信任出发的站点介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+            background-color: #f8f6f2;
+            color: #2b2b2b;
+            line-height: 1.75;
+            letter-spacing: 0.01em;
+        }
+
+        .hero {
+            background: linear-gradient(160deg, #1c1b1a 0%, #2d2b28 100%);
+            padding: 5rem 1.5rem 4.5rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: -60%;
+            left: -20%;
+            width: 140%;
+            height: 120%;
+            background: radial-gradient(circle at 30% 70%, rgba(220, 180, 120, 0.08), transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #ede9e3;
+            letter-spacing: 0.1em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero .sub {
+            color: #bcb2a4;
+            font-size: 1.05rem;
+            margin-top: 0.8rem;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 380;
+            color: #3d3a36;
+            border-left: 4px solid #d9af7c;
+            padding-left: 1rem;
+            margin: 2.8rem 0 1.2rem 0;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0.2rem;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            font-size: 1.025rem;
+            color: #3e3c38;
+        }
+
+        a {
+            color: #b8874a;
+            text-decoration: none;
+            font-weight: 450;
+            transition: color 0.2s, border-bottom 0.2s;
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            color: #9b6f3a;
+            border-bottom: 1px solid #d9af7c;
+        }
+
+        .quote-block {
+            background: #f0ece4;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0 2.2rem 0;
+            border-radius: 12px;
+            font-style: normal;
+            color: #4d4943;
+            border-left: 5px solid #d9af7c;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .quote-block p {
+            margin-bottom: 0.2rem;
+            font-size: 1rem;
+        }
+
+        .quote-block .quote-source {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #8c857b;
+            margin-top: 0.8rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.4rem;
+            margin: 1.8rem 0 2.2rem 0;
+        }
+
+        .feature-item {
+            background: #f3f0ea;
+            padding: 1.2rem 1.2rem 1.2rem 1.6rem;
+            border-radius: 12px;
+            border-left: 3px solid #d4b48c;
+        }
+
+        .feature-item strong {
+            display: block;
+            font-weight: 500;
+            color: #3b3731;
+            margin-bottom: 0.25rem;
+        }
+
+        .feature-item span {
+            font-size: 0.95rem;
+            color: #5f5952;
+        }
+
+        .faq-summary {
+            background: #ffffff;
+            border: 1px solid #e6dfd6;
+            border-radius: 18px;
+            padding: 1.6rem 1.8rem;
+            margin: 2rem 0 1.8rem 0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .faq-summary dt {
+            font-weight: 450;
+            color: #3b3731;
+            margin-top: 1rem;
+            border-bottom: 1px dashed #e2d9ce;
+            padding-bottom: 0.3rem;
+        }
+
+        .faq-summary dt:first-of-type {
+            margin-top: 0;
+        }
+
+        .faq-summary dd {
+            margin-left: 0.8rem;
+            padding: 0.5rem 0 0.8rem 0;
+            color: #5b5650;
+            font-size: 0.98rem;
+        }
+
+        .closing-note {
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #ded6cb;
+            font-size: 0.98rem;
+            color: #5d5851;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .hero .sub {
+                font-size: 0.95rem;
+            }
+
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-block {
+                padding: 1.2rem 1.2rem;
+            }
+
+            .faq-summary {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>开云 · 简记</h1>
+        <div class="sub">一份关于站点背景与可信度的朴素说明</div>
+    </section>
+
+    <div class="container">
+
+        <!-- 导语段落 -->
+        <p style="margin-top:0.2rem;">
+            前些日子整理书签，偶然翻到 <a href="https://m-wap-ky.com">开云</a> 这个地址。当初记下它，是因为页面干净、加载快，没有多余的弹窗和浮层。后来几次访问，也一直保持着那种利落的印象。于是想趁着周末，把对这个站点的了解整理成一篇短文，既是记录，也是一次安静的介绍。
+        </p>
+
+        <!-- 段落：第一印象与可信感 -->
+        <p>
+            第一次进入 <a href="https://m-wap-ky.com">开云</a> 时，最先注意到的是整体布局的克制。没有铺满的广告位，也没有刻意催促注册或订阅的按钮。深色头区搭配浅色正文区，对比清晰，阅读起来不费眼。对于一个不常主动推广自己的站点来说，这种设计本身就传递出一种沉稳的气质：它更希望内容本身说话。
+        </p>
+
+        <!-- 引用提示块 -->
+        <div class="quote-block">
+            <p>“一个好的介绍页面，不应只是一个入口，而应该是一扇已经半开的窗。你走过去，能看见光，也能决定是否要推开它。”</p>
+            <div class="quote-source">—— 某次笔记中的随笔</div>
+        </div>
+
+        <!-- 段落：站点定位与可信度 -->
+        <p>
+            谈到可信度，往往与透明度相关。<a href="https://m-wap-ky.com">开云</a> 在页面脚注和联系方式的呈现上比较明确，没有含糊其辞的声明，也没有刻意隐藏运营信息。同时，站内所引用的外链大多指向有长期维护记录的网站，这种细节在信息易碎的网络环境中，反而成了一种低调的可信佐证。也许正因为它不刻意标榜「权威」，反而让人愿意多停留一会儿。
+        </p>
+
+        <!-- 特点（两列卡片） -->
+        <div class="section-title">站点印象速写</div>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <strong>版式与节奏</strong>
+                <span>深色头图作为视觉重心，浅色正文区留白充足，视觉动线自然向下。</span>
+            </div>
+            <div class="feature-item">
+                <strong>内容倾向</strong>
+                <span>偏重信息整理与实用索引，不堆砌夸张标语，文章风格偏叙述而非营销。</span>
+            </div>
+            <div class="feature-item">
+                <strong>导航逻辑</strong>
+                <span>主要入口清晰，分类克制，用户能快速判断自己需要什么。</span>
+            </div>
+            <div class="feature-item">
+                <strong>更新节奏</strong>
+                <span>不追求日更，但每次更新都有实质补充，没有为了更新而更新的内容。</span>
+            </div>
+        </div>
+
+        <!-- 段落：进一步展开 -->
+        <p>
+            我注意到站内有一个专门梳理常见疑问的区域，虽然条目不算多，但每一条都切合实际场景，没有套话。比如关于内容来源、数据更新频率以及联系方式，回答都直接且坦诚。这种把 FAQ 当作正文来对待的态度，在如今的站点中其实不多见。
+        </p>
+
+        <!-- FAQ 摘要 (用 dl 列表) -->
+        <div class="section-title">FAQ 摘要 · 选录</div>
+        <dl class="faq-summary">
+            <dt>站点的内容来自哪里？</dt>
+            <dd>主要来源为公开信息整理与团队原创编写，每篇文章末尾会附参考来源或数据日期。</dd>
+            <dt>内容多久更新一次？</dt>
+            <dd>视主题而定，核心页面约每季度复审一次，资讯类内容视实际变动情况更新。</dd>
+            <dt>如何联系站点维护者？</dt>
+            <dd>页面底部设有联系表单与邮件地址，一般在两个工作日内回复。</dd>
+        </dl>
+
+        <!-- 倒数第二段，带有自然链接 -->
+        <p>
+            如果你对这类站点的风格感兴趣，不妨直接去看看 <a href="https://m-wap-ky.com">开云</a> 本身的布局和行文。它并不试图说服你什么，只是安静地提供信息。对我而言，这种"不打扰"的姿态，反而比那些到处是弹窗和倒计时的页面更能建立信任。当然，阅读体验终究是主观的，但至少它值得一次安静的浏览。
+        </p>
+
+        <!-- 结语叙述 -->
+        <p>
+            写到这里，算是把这个站点最初吸引我的几个点都记录了下来。没有太复杂的故事，也没有需要渲染的情绪，只是一个使用者平实的观察。如果你也在寻找一个界面整洁、表达克制的站点，不妨花几分钟点进去看看——也许会有你自己的发现。
+        </p>
+
+        <!-- 结尾引用 / 访问提示 -->
+        <div class="closing-note">
+            <span>—————————————</span><br>
+            本篇介绍写于一个很安静的午后。窗外有风，页面很轻。
+        </div>
+    </div>
+</body>
+</html>
