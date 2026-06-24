@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 日常灵感与游戏生活</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f9f6f0;
+      color: #3a3a3a;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background-color: #fffcf8;
+      border-radius: 28px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
+      padding: 2.8rem 2rem;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .container { padding: 2rem 1.2rem; border-radius: 20px; }
+    }
+
+    /* 主视觉 - 低调卡片 */
+    .hero-card {
+      background: #f2efe7;
+      border-radius: 24px;
+      padding: 2.2rem 2rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      border-left: 6px solid #b7a88a;
+    }
+
+    .hero-card h1 {
+      font-size: 2.4rem;
+      font-weight: 450;
+      letter-spacing: 0.02em;
+      color: #4d3e2c;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-card .sub {
+      font-size: 1.05rem;
+      color: #6a5f4f;
+      max-width: 500px;
+      margin: 0 auto;
+      border-top: 1px solid #d6cdbc;
+      padding-top: 0.75rem;
+    }
+
+    /* 段落排版 */
+    p {
+      margin-bottom: 1.6rem;
+      font-size: 1rem;
+      color: #3f3a33;
+    }
+
+    .intro-text {
+      font-size: 1.08rem;
+      border-left: 3px solid #dacfbb;
+      padding-left: 1.4rem;
+      background: #f8f4ec;
+      border-radius: 0 12px 12px 0;
+      padding: 1rem 1.6rem;
+      margin: 1.4rem 0 2rem 0;
+    }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2.2rem 0;
+    }
+
+    @media (max-width: 560px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card-item {
+      background: #f9f5ed;
+      border-radius: 20px;
+      padding: 1.6rem 1.4rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      border: 1px solid #ece3d6;
+      transition: 0.1s ease;
+    }
+
+    .card-item h3 {
+      font-size: 1.2rem;
+      font-weight: 450;
+      color: #5a4c38;
+      margin-bottom: 0.6rem;
+      border-bottom: 1px dashed #cfc2ae;
+      padding-bottom: 0.3rem;
+    }
+
+    .card-item p {
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+      color: #4d4438;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e5ddcf;
+      color: #4b3f2f;
+      font-size: 0.7rem;
+      padding: 0.1rem 0.7rem;
+      border-radius: 30px;
+      letter-spacing: 0.3px;
+      margin-top: 0.6rem;
+    }
+
+    /* 引用块 / 提示框 */
+    .insight-box {
+      background: #eee9df;
+      border-radius: 20px;
+      padding: 1.6rem 2rem;
+      margin: 2rem 0 1.8rem 0;
+      border-left: 6px solid #b1977a;
+      font-style: normal;
+    }
+
+    .insight-box p {
+      margin-bottom: 0.4rem;
+    }
+
+    .insight-box strong {
+      font-weight: 500;
+      color: #3f3527;
+    }
+
+    .faq-mini {
+      background: #f4efe6;
+      border-radius: 20px;
+      padding: 1.2rem 1.6rem;
+      margin: 2rem 0 1.2rem;
+    }
+
+    .faq-mini summary {
+      font-weight: 470;
+      cursor: pointer;
+      color: #4f422f;
+      padding: 0.3rem 0;
+    }
+
+    .faq-mini p {
+      margin: 0.5rem 0 0 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd6c9;
+      margin: 2.2rem 0 1rem 0;
+    }
+
+    .footer-note {
+      font-size: 0.88rem;
+      color: #7f7567;
+      text-align: center;
+      border-top: 1px solid #e7dfd1;
+      padding-top: 1.5rem;
+      margin-top: 1.8rem;
+    }
+
+    a {
+      color: #6f5f48;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #baa78c;
+    }
+
+    a:hover {
+      color: #4a3c2a;
+      text-decoration-color: #7a664c;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- 主视觉 -->
+  <div class="hero-card">
+    <h1>爱游戏 · 日常连接</h1>
+    <div class="sub">一种温和的陪伴，从生活中来，到乐趣中去</div>
+  </div>
+
+  <!-- 介绍段落，自然嵌入链接 -->
+  <p>如果说游戏是一扇窗，那么 <a href="https://linechina-igame.com">爱游戏</a> 就像窗边那杯温度刚好的茶——它不喧哗，却始终能让人感到某种妥帖的安心。这里所谈论的，并非宏大的虚拟世界叙事，而是一些朴素的念头：如何让游戏回归生活里一个舒服的位置，既不远离，也不沉迷。</p>
+
+  <div class="intro-text">
+    <p>过去几个月里，我慢慢注意到一个变化：身边很多朋友不再把游戏当作逃避现实的出口，而是像翻一本闲书、听一段播客那样，自然地在碎片时间里打开。不需要战绩，不需要排名，甚至不需要通关。这种松弛的态度，恰恰是「爱游戏」这个语境下最迷人的部分。</p>
+  </div>
+
+  <!-- 用途卡片（信息卡片式） -->
+  <div class="card-grid">
+    <div class="card-item">
+      <h3>▎日常陪伴</h3>
+      <p>等咖啡的间隙、通勤路上的十分钟、夜晚睡前的片刻。一个轻量关卡，一段舒缓的音乐配上一小段操作，就像给大脑做了一次伸展。</p>
+      <span class="tag">无压力体验</span>
+    </div>
+    <div class="card-item">
+      <h3>▎社交微触点</h3>
+      <p>和异地朋友约一局合作，或是和家人一起玩解谜。游戏成为对话的引子，而非阻隔。有时候，一句“我卡关了，帮我看一眼”比群聊里的表情包更真实。</p>
+      <span class="tag">连接感</span>
+    </div>
+    <div class="card-item">
+      <h3>▎审美与叙事</h3>
+      <p>越来越多人把游戏当作可交互的叙事媒介。一幅美术风格独到的画面、一段克制又细腻的文本，那种沉浸不是“杀时间”，而是“让时间变得有质感”。</p>
+      <span class="tag">艺术向</span>
+    </div>
+    <div class="card-item">
+      <h3>▎自我调节</h3>
+      <p>心情低落或大脑疲惫时，一点简单的反馈（拼图、养成、节奏点击）能帮助重新集中注意力。不是逃避，而是一种微小但有效的心理整理。</p>
+      <span class="tag">治愈系</span>
+    </div>
+  </div>
+
+  <!-- 适合人群 引用块风格 -->
+  <div class="insight-box">
+    <p><strong>适合谁？</strong> 也许你并不是重度玩家，甚至不觉得自己算“玩家”。你可能是偶尔想放松的上班族、陪孩子探索世界的家长、寻找叙事灵感的创作者，或者单纯对电子交互感到好奇的人。在 <a href="https://linechina-igame.com">爱游戏</a> 所关注的范畴里，每个人都可以找到自己舒服的入口。</p>
+    <p style="margin-top:0.4rem;">不需要满级装备，不需要查阅攻略。只需要一点点愿意尝试的耐心，和一种不评判自己的态度。</p>
+  </div>
+
+  <!-- 自然链接段落，进一步从主题展开 -->
+  <p>我常常觉得，「爱游戏」这三个字的重音其实落在“爱”上，而不是“游戏”。因为真正让人留下来的，从来不是复杂的系统或华丽的特效，而是某种情感上的回应：一个解谜成功时的会心一笑，一段音乐带来的遥远回忆，或者仅仅是因为某个角色走路的样子很可爱。你可以到 <a href="https://linechina-igame.com">爱游戏</a> 找到更多类似的普通故事，它们不戏剧化，但真实。</p>
+
+  <!-- FAQ摘要 小提示 -->
+  <div class="faq-mini">
+    <details>
+      <summary>❓ 一些常被问到的（或我自己嘀咕过的）</summary>
+      <p><strong>玩一会儿就腻了，是我没有耐心吗？</strong> 不是。腻了恰说明你需要换一种类型，或者单纯今天不适合玩。游戏不应该成为任务。</p>
+      <p><strong>有必要买昂贵的设备吗？</strong> 完全不需要。浏览器、旧手机、甚至一台十年前笔记本，都能找到很好的体验。关键是内容，不是参数。</p>
+      <p><strong>怎么找到适合自己的游戏？</strong> 按情绪选。累的时候选节奏舒缓的，无聊的时候选有一点挑战的。别信“必玩清单”，信你自己的感觉。</p>
+    </details>
+  </div>
+
+  <hr />
+
+  <div class="footer-note">
+    由日常观察编写 · 不赶时间，不追热点<br>
+    你随时可以退出去泡杯茶，页面不会消失。
+  </div>
+</div>
+</body>
+</html>
